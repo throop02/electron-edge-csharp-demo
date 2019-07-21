@@ -1,0 +1,28 @@
+{
+  "name": "cpumonitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.electron.cpumonitor",
+    "files": [],
+    "win": {},
+    "directories": {}
+  },
+  "author": "Evan Vaughan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.2",
+    "electron-builder": "^21.1.1"
+  },
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "electron-edge-js": "^10.11.1",
+    "jquery": "^3.4.1",
+    "knockout": "^3.5.0"
+  }
+}

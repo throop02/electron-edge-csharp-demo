@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>CPU Monitor</title>
+	  <link rel="stylesheet" href="./w3.css">
+	  <script src="index.js"></script>
+	</head>
+	<body class="w3-black">
+	  <div id="container" class="w3-container w3-black">
+		<div class="chart-container" style="position: relative; height:200px; width:100%">
+			<canvas id="cpuGraph"></canvas>
+		</div>
+		<div style="position: relative; padding-left: 20px;">
+		  <!-- ko foreach: cpuStats -->
+		  <div style="float: left; width:50%;">
+				<span data-bind="text: 'Core ' + Id"></span>
+				<div class="w3-black">
+					  <div data-bind="text: Percentage + '%', style: { color: Percentage > 75 ? 'red' : 'green', width: Percentage + '%' }" class="w3-container w3-green w3-center"></div>
+				</div>
+		  </div>
+		  <!-- /ko -->
+		</div>
+	  </div>
+	</body>
+</html>
