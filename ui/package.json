@@ -22,7 +22,7 @@
   "dependencies": {
     "chart.js": "^2.8.0",
     "electron-edge-js": "^10.11.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "knockout": "^3.5.0"
   }
 }
